@@ -1,16 +1,30 @@
 import os
-import pprint
-import logging
+import uuid
 from flask import Flask
-
 app = Flask(__name__)
+my_uuid = str(uuid.uuid1())
+BLUE = "#0099FF"
+GREEN = "#33CC33"
 
-logging.basicConfig(level=logging.DEBUG)
+
+
+COLOR = GREEN
+
 
 @app.route('/')
 def hello():
-	return 'Hello World!\n'
+    
+	return """
+	<html>
+	<body bgcolor="{}">
 
-port = os.getenv('VCAP_APP_PORT', '5000')
+	<center><h1><font color="white">Hi, I'm GUID:<br/>
+	{}
+	</center>
+
+	</body>
+	</html>
+	""".format(COLOR,my_uuid)
+
 if __name__ == "__main__":
-	app.run(host='0.0.0.0', port=int(port))
+	app.run(host='0.0.0.0', port=int(os.getenv('VCAP_APP_PORT', '5000')))
