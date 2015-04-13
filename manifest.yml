@@ -1,0 +1,9 @@
+---
+applications:
+- name: python-hello-mcowger
+  memory: 128M
+  no-route: false
+  host: python-hello-mcowger
+  instances: 1
+  buildpack: python_buildpack
+  command: python hello.py
