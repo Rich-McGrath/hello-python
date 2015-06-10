@@ -12,8 +12,10 @@ COLOR = BLUE
 rediscloud_service = json.loads(os.environ['VCAP_SERVICES'])['rediscloud'][0]
 credentials = rediscloud_service['credentials']
 r = redis.Redis(host=credentials['hostname'], port=credentials['port'], password=credentials['password'])
-r.set("hit_counter", 1)
 
+
+if r.get("hit_counter") <= 0:
+	r.set("hit_counter", 1)
 
 @app.route('/')
 def hello():
@@ -31,6 +33,7 @@ def hello():
 	</body>
 	</html>
 	""".format(COLOR,my_uuid,r.get("hit_counter"))
+
 
 
 
