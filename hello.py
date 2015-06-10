@@ -23,9 +23,9 @@ def hello():
 	<html>
 	<body bgcolor="{}">
 
-	<center><h1><font color="white">Hi, I'm GUID:<br/>
-	<center><h1><font color="white">Hit Counter:<br/>
-	{}{}
+	<center><h1><font color="white">Hi, I'm GUID:<br/>{}
+	<center><h1><font color="white">Hit Counter:<br/>{}
+
 	</center>
 
 	</body>
