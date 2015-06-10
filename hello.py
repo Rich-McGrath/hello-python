@@ -13,11 +13,11 @@ rediscloud_service = json.loads(os.environ['VCAP_SERVICES'])['rediscloud'][0]
 credentials = rediscloud_service['credentials']
 r = redis.Redis(host=credentials['hostname'], port=credentials['port'], password=credentials['password'])
 r.set("hit_counter", 1)
-r.incr("hit_counter")
+
 
 @app.route('/')
 def hello():
-
+	r.incr("hit_counter")
 
 	return """
 	<html>
@@ -37,6 +37,3 @@ def hello():
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=int(os.getenv('VCAP_APP_PORT', '5000')))
-
-r.set("hit_counter", 1)
-r.incr("hit_counter")
