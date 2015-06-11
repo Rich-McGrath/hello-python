@@ -6,17 +6,13 @@ The sample is using [Flask microframework](http://flask.pocoo.org/) and is inten
 Deploy to Cloud Foundry
 -----------------------
 ```script
-cf push <YOUR_APP_NAME> -m 128M -b https://github.com/heroku/heroku-buildpack-python.git
+cf push <YOUR_APP_NAME> -m 128M
 ```
 or
 ```script
-cf push <YOUR_APP_NAME> -m 128M -b https://github.com/joshuamckenty/heroku-buildpack-python.git
+cf push <YOUR_APP_NAME> -m 128M -b
 ```
 or
 ```script
-cf push <YOUR_APP_NAME> -m 128M -b https://github.com/ephoning/heroku-buildpack-python.git
+cf push <YOUR_APP_NAME> -m 128M -b
 ````
-
-Notes
------
-2014/02/18: The offical Heroku buildpack seems not to be working with Cloud Foundry.
