@@ -61,4 +61,4 @@ target/
 private_config.cfg
 private_config_new.cfg
 config.json
-*.pyc
+*.pycnewrelic.ini
