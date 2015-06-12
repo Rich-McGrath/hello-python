@@ -36,7 +36,7 @@ def hello():
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTidn2dBYbY" frameborder="0" allowfullscreen></iframe><br/><br/>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/bS5P_LAqiVg" frameborder="0" allowfullscreen></iframe><br/><br/>
 	<br/><br/>
-	<a href="http://www.wonder-tonic.com/geocitiesizer/content.php?theme=2&music=10&url=http://richm-hello-python.cfapps.io/>Click Here for Facemetling Awesomesauce</a>
+	<a href="http://www.wonder-tonic.com/geocitiesizer/content.php?theme=2&music=10&url=http://richm-hello-python.cfapps.io/">Click Here for Facemetling Awesomesauce</a>
 	</body>
 	</html>
 	""".format(COLOR,my_uuid,r.get("hit_counter"))
