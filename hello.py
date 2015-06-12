@@ -3,7 +3,7 @@ import uuid
 import urlparse
 import redis
 import json
-import newrelic.agent
+import newrelic.agent-
 newrelic.agent.initialize('newrelic.ini')
 from flask import Flask
 app = Flask(__name__)
@@ -31,7 +31,9 @@ def hello():
 	<center><h1><font color="white">Hit Counter:<br/>{}
 
 	</center>
-    <iframe src="//giphy.com/embed/RM4wYXmnt3zaM" width="480" height="269" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    <iframe src="//giphy.com/embed/RM4wYXmnt3zaM" width="480" height="269" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br/>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTidn2dBYbY" frameborder="0" allowfullscreen></iframe><br/>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/bS5P_LAqiVg" frameborder="0" allowfullscreen></iframe>
 	</body>
 	</html>
 	""".format(COLOR,my_uuid,r.get("hit_counter"))
