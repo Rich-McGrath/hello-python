@@ -31,7 +31,7 @@ def hello():
 	<center><h1><font color="white">Hit Counter:<br/>{}
 
 	</center>
-
+    <iframe src="//giphy.com/embed/RM4wYXmnt3zaM" width="480" height="269" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 	</body>
 	</html>
 	""".format(COLOR,my_uuid,r.get("hit_counter"))
