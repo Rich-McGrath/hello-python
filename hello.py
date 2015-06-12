@@ -3,7 +3,7 @@ import uuid
 import urlparse
 import redis
 import json
-import newrelic.agent-
+import newrelic.agent
 newrelic.agent.initialize('newrelic.ini')
 from flask import Flask
 app = Flask(__name__)
