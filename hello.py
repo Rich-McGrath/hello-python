@@ -30,7 +30,7 @@ def hello():
 	<center><h1><font color="white">Hit Counter:<br/>{}
 
 	</center>
-	<a href="http://www.cornify.com" onclick="cornify_add();return false;"><img src="http://www.cornify.com/assets/cornifycorn.gif" width="52" height="51" border="0" alt="Cornify" /></a><script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+	<a href="http://www.cornify.com" onclick="cornify_add();return false;"><img src="http://www.cornify.com/assets/cornifycorn.gif" width="52" height="51" border="0" alt="Cornify" /></a><script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script><br/><br/><br/>
     <iframe src="//giphy.com/embed/RM4wYXmnt3zaM" width="480" height="269" frameBorder="0" style="max-width: 100%" class="giphy-embed" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br/>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTidn2dBYbY" frameborder="0" allowfullscreen></iframe><br/><br/>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/bS5P_LAqiVg" frameborder="0" allowfullscreen></iframe><br/><br/>
