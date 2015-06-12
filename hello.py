@@ -25,6 +25,8 @@ def hello():
 
 	return """
 	<html>
+	<script src='jquery.js'></script>
+    <script src='jquery.konami.js'></script>
 	<body bgcolor="{}">
 
 	<center><h1><font color="white">Hi, I'm GUID:<br/>{}
